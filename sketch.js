@@ -70,7 +70,7 @@ function setup() {
   ball = Bodies.circle(50,200,20);
   World.add(world,ball);
 
-  slingShot = new SlingShot(this.ball,{x:200,y:200});
+  slingshot = new Slingshot(this.ball,{x:200,y:200});
 
 }
 
@@ -139,7 +139,7 @@ function draw() {
  //ball = loadImage(polygon_img ,ball.position.x-50,ball.position.y-80,40,40);
  // ellipseMode(RADIUS);
   ellipse(ball.position.x,ball.position.y,20);
-  slingShot.display();
+  slingshot.display();
 }
 
 function mouseDragged(){
@@ -147,7 +147,7 @@ function mouseDragged(){
 }
 
 function mouseReleased(){
-  slingShot.fly();
+  slingshot.fly();
 }
 
 function keyPressed () {
