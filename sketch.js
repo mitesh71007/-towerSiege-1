@@ -21,7 +21,6 @@ function setup() {
   world = engine.world;
 
   createCanvas(900,400);
-  ground = new Ground();
   stand1 = new Stand(380,300,270,10);
   stand2 = new Stand(700,200,200,10);
  
